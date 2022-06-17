@@ -7,39 +7,44 @@
     <title>Конспект по git</title>
   </head>
   <body>
-    <h1>Hello GIT!</h1>
-    <h2>Команды в Git Bash консоли</h2>
-    <p>clear — Очистить консоль</p>
+    <main>
+      <h1>Hello GIT!</h1>
+      <section>
+        <h2>Команды в Git Bash консоли</h2>
+        <p>clear — Очистить консоль</p>
 
-    <h3>Навигация</h3>
-    <p>pwd — Показать текущий каталог</p>
-    <p>ls - Показать файлы в данной папке, кроме скрытых</p>
-    <p>ls -f — Показать файлы в данной папке, включая и скрытые</p>
-    <p>cd c:/ — Перейти в конкретный каталог</p>
-    <p>cd - — Вернуться назад</p>
-    <p>cd .. — Выйти на 1 уровень вверх</p>
-    <p>cd ../.. — Выйти на 2 уровня вверх</p>
+        <h3>Навигация</h3>
+        <p>pwd — Показать текущий каталог</p>
+        <p>ls - Показать файлы в данной папке, кроме скрытых</p>
+        <p>ls -f — Показать файлы в данной папке, включая и скрытые</p>
+        <p>cd c:/ — Перейти в конкретный каталог</p>
+        <p>cd - — Вернуться назад</p>
+        <p>cd .. — Выйти на 1 уровень вверх</p>
+        <p>cd ../.. — Выйти на 2 уровня вверх</p>
 
-    <h3>Создание каталогов</h3>
-    <p>mkdir — Создать папку</p>
-    <p>cd !$ — Перейти в только что созданную папку</p>
-    <p>mkdir -p {app1,app2} — Создать сразу несколько папок</p>
-    <p>mkdir -p app/{css,js} — Создать сразу несколько вложенных папок</p>
+        <h3>Создание каталогов</h3>
+        <p>mkdir — Создать папку</p>
+        <p>cd !$ — Перейти в только что созданную папку</p>
+        <p>mkdir -p {app1,app2} — Создать сразу несколько папок</p>
+        <p>mkdir -p app/{css,js} — Создать сразу несколько вложенных папок</p>
 
-    <h3>Создание файлов</h3>
-    <p>touch index.html — Создать файл index.html</p>
-    <p>
-      touch app/{css/main.css,js/main.js,index.html} — Создать сразу несколько
-      файлов, никаких лишних пробелов быть не должно
-    </p>
-    <p>Удаление файлов touch — позволяет создавать файлы</p>
-    <p>rm test — Удалить пустую папку test</p>
-    <p>rm -r test — Удалить папку test с файлами внутри неё</p>
-    <h3>Перемещение файлов</h3>
-    <p>mv app1/*.* app2 — Переместить все файлы из папки app1 в папку app2</p>
-
-    <h2>Команди Git</h2>
-    <pre><strong>git config</strong>
+        <h3>Создание файлов</h3>
+        <p>touch index.html — Создать файл index.html</p>
+        <p>
+          touch app/{css/main.css,js/main.js,index.html} — Создать сразу
+          несколько файлов, никаких лишних пробелов быть не должно
+        </p>
+        <p>Удаление файлов touch — позволяет создавать файлы</p>
+        <p>rm test — Удалить пустую папку test</p>
+        <p>rm -r test — Удалить папку test с файлами внутри неё</p>
+        <h3>Перемещение файлов</h3>
+        <p>
+          mv app1/*.* app2 — Переместить все файлы из папки app1 в папку app2
+        </p>
+      </section>
+      <section>
+        <h2>Команди Git</h2>
+        <pre><strong>git config</strong>
     
 Використання: git config –global user.name “[name]”  
 
@@ -48,18 +53,18 @@
 Ця команда встановлює ім’я автора та адресу електронної пошти відповідно для використання з вашими коммітами.
 </pre>
 
-    <pre><strong>git init</strong>
+        <pre><strong>git init</strong>
 
 Використання: git init [repository name]
 Ця команда використовується для запуску нового сховища.
 </pre>
 
-    <pre><strong>git clone</strong> 
+        <pre><strong>git clone</strong> 
 Використання: git clone [url]  
 Ця команда використовується для отримання сховища з існуючої URL-адреси.
 </pre>
 
-    <pre><strong>git add</strong> 
+        <pre><strong>git add</strong> 
 Використання: git add [file]  
 Ця команда додає файл до проміжної області.
 
@@ -72,7 +77,7 @@ git add util/\*\*/_.cpp Добавить все файлы _.cpp, которые
 git add _.c _.h _.s _.asm Добавить в репозиторий все файлы(1) с расширениями _.c, _.h, \_.s, \*.asm.
     </pre>
 
-    <pre><strong>git commit</strong>
+        <pre><strong>git commit</strong>
 Використання: git commit -m “[ Type in the commit message]”  
 Ця команда постійно записує або знімає файл в історії версій.
 
@@ -80,7 +85,7 @@ git add _.c _.h _.s _.asm Добавить в репозиторий все фа
 Ця команда фіксує будь-які файли, які ви додали за допомогою команди git add, а також усі файли, які ви змінили з тих пір.
     </pre>
 
-    <pre><strong>git diff</strong>
+        <pre><strong>git diff</strong>
 Використання: git diff
 Ця команда показує відмінності файлів, які ще не поставлені.
 
@@ -91,7 +96,7 @@ git add _.c _.h _.s _.asm Добавить в репозиторий все фа
 Ця команда показує відмінності між двома згаданими гілками.
 </pre>
 
-    <pre><strong>git reset</strong>
+        <pre><strong>git reset</strong>
 Використання: git reset [file]  
 Ця команда знімає файл із стадії, але зберігає вміст файлу.
 
@@ -101,7 +106,7 @@ git add _.c _.h _.s _.asm Добавить в репозиторий все фа
 Використання:  git reset –hard [commit] Ця команда відкидає всю історію та повертається до вказаного коміту.
 </pre>
 
-    <pre><strong>git status</strong>
+        <pre><strong>git status</strong>
 Використання: git status  
 Ця команда перераховує всі файли, які потрібно зафіксувати.
 
@@ -109,7 +114,7 @@ git status --untracked-files=no
 Показать состояние репозитория без отображения файлов, которые еще не добавлены в репозиторий.
 </pre>
 
-    <pre><strong>git rm</strong>
+        <pre><strong>git rm</strong>
 Використання: git rm [file]  
 Ця команда видаляє файл із вашого робочого каталогу та виконує видалення.
 
@@ -117,7 +122,7 @@ git rm --cached имя файла
 Убирает из репозитория указанный файл (он больше не отслеживается). В рабочем каталоге этот файл останется.
 </pre>
 
-    <pre><strong>git log</strong>
+        <pre><strong>git log</strong>
 Використання: git log  
 Ця команда використовується для відображення історії версій для поточної гілки.
 
@@ -125,17 +130,17 @@ git rm --cached имя файла
 Ця команда відображає історію версій файлу, включаючи перейменування файлів.
 </pre>
 
-    <pre><strong>git show</strong>
+        <pre><strong>git show</strong>
 Використання: git show [commit]  
 Ця команда показує метадані та зміни вмісту вказаного коміту.
 </pre>
 
-    <pre><strong>git tag</strong>
+        <pre><strong>git tag</strong>
 Використання: git tag [commitID]  
 Ця команда використовується для надання тегів зазначеному коміту.
 </pre>
 
-    <pre><strong>git branch</strong>
+        <pre><strong>git branch</strong>
 Використання:  git branch 
 Ця команда містить список усіх локальних гілок у поточному сховищі.
 
@@ -149,7 +154,7 @@ git branch -m old new
 Переименовать ветку. Ветка с именем old получит имя new
 </pre>
 
-    <pre><strong>git checkout</strong>
+        <pre><strong>git checkout</strong>
 Використання: git checkout [branch name]  
 Ця команда використовується для перемикання з однієї гілки на іншу.
 
@@ -157,16 +162,16 @@ git branch -m old new
 Ця команда створює нову гілку, а також перемикається на неї.
 </pre>
 
-    <pre><strong>git merge</strong>
+        <pre><strong>git merge</strong>
 Використання: git merge [branch name]  
 Ця команда об’єднує історію вказаної гілки з поточною гілкою.</pre>
 
-    <pre><strong>git remote</strong>
+        <pre><strong>git remote</strong>
 Використання: git remote add [variable name] [Remote Server Link]  
 Ця команда використовується для підключення вашого локального сховища до віддаленого сервера.
 </pre>
 
-    <pre><strong>git push</strong>
+        <pre><strong>git push</strong>
 Використання: git push [variable name] master  
 Ця команда надсилає внесені зміни головної гілки до вашого віддаленого сховища.
 
@@ -180,12 +185,12 @@ git branch -m old new
 Ця команда видаляє гілку у вашому віддаленому сховищі.
 </pre>
 
-    <pre><strong>git pull</strong>
+        <pre><strong>git pull</strong>
 Використання: git pull [Repository Link]  
 Ця команда отримує та об’єднує зміни на віддаленому сервері у ваш робочий каталог.
 </pre>
 
-    <pre><strong>git stash</strong>
+        <pre><strong>git stash</strong>
 Використання: git stash save  
 Ця команда тимчасово зберігає всі змінені відстежувані файли.
 
@@ -199,11 +204,13 @@ git branch -m old new
 Ця команда відкидає останній прихований набір змін.
 </pre>
 
-    <pre>
+        <pre>
 <em>switch</em>  - Отмена предыдущей операции переключения между ветками.
 
 <em>git config</em> --global alias.st "status -s"
 После этого команды git st и git status будут выполняться одинаково.
 </pre>
+      </section>
+    </main>
   </body>
 </html>
