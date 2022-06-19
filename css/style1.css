@@ -10,9 +10,12 @@ body {
   font-family: "Roboto", sans-serif;
   /*font-family: arial, Arial, Helvetica, sans-serif;*/
 }
- h2 {
+h2 {
   text-align: center;
 }
 h1 {
-    text-align: center;
-  }
+  text-align: center;
+}
+.centr {
+  padding: 10px 20px 10px;
+}
