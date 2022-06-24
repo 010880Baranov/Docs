@@ -32,3 +32,6 @@ pre {
   padding: 10px;
   margin: 20px;
 }
+ul li + li {
+  color: aqua;
+}
