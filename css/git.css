@@ -42,9 +42,20 @@ div p > span {
   text-transform: capitalize;
 }
 /*псевдоелементи*/
-p.psevdo::first-letter {
-  font-size: 19px;
+p::first-letter {
+  font-size: 30px;
 }
-p.psevdo::first-line {
-  text-decoration: dotted;
+p::first-line {
+  text-decoration: underline;
+}
+p::selection {
+  background-color: yellow;
+  color: red;
+}
+/*допис до та після заголовка*/
+#k::before {
+  content: "Найпоширенні";
+}
+#k::after {
+  content: "для використання";
 }
