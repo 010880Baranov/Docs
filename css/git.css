@@ -34,10 +34,10 @@ h2 {
   font-size: 25px;
 }
 /*звернення до класу font та тега span*/
-h3 p.font {
+section p.font {
   text-decoration: dashed;
 }
 
-h3 p span {
-  text-shadow: (1px 1px 2px chocolate);
+section p > span {
+  text-shadow: (1px 1px 10px chocolate);
 }
