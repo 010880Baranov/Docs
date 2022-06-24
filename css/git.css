@@ -33,11 +33,18 @@ h2 {
   color: brown;
   font-size: 25px;
 }
-/*звернення до класу font та тега span*/
+/*звернення до класу font та тега span (слово з великої букви)*/
 div p.font {
   color: rgb(240, 16, 45);
 }
 
 div p > span {
   text-transform: capitalize;
+}
+/*псевдоелементи*/
+p.psevdo::first-letter {
+  font-size: 19px;
+}
+p.psevdo::first-line {
+  text-decoration: dotted;
 }
