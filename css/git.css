@@ -27,8 +27,17 @@ h1 {
 h2 {
   text-decoration: underline;
 }
-/* класс для стилізації, id для логики*/
+/* класс для стилізації, id для логики
+колір та шрифт текста*/
 #t {
   color: brown;
   font-size: 25px;
+}
+/*звернення до класу font та тега span*/
+h3 p.font {
+  text-decoration: dashed;
+}
+
+h3 p span {
+  text-shadow: (1px 1px 2px chocolate);
 }
