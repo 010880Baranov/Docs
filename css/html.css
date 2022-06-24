@@ -39,3 +39,17 @@ h1 {
   font-size: 25px;
   text-shadow: 1px 1px 1px #ff008f;
 }
+/*псевдоелементи в списках*/
+.list1 li:first-child {
+  color: #ff008f;
+}
+.list1 li:last-child {
+  color: rgb(6, 25, 54);
+}
+/* колір для парних та непарних елементів*/
+.list2 li:nth-child(2) {
+  color: darkblue;
+}
+.list2 li:nth-child(3) {
+  color: crimson;
+}

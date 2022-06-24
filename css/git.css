@@ -53,9 +53,11 @@ p::selection {
   color: red;
 }
 /*допис до та після заголовка*/
-#k::before {
-  content: "Найпоширенні";
+h2::before {
+  content: "Найпоширенні  ";
+  color: deepskyblue;
 }
-#k::after {
-  content: "для використання";
+h2::after {
+  content: "  для використання";
+  color: darkgreen;
 }
