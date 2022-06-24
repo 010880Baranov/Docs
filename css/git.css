@@ -19,3 +19,16 @@ h1 {
 section {
   padding: 20px 30px 20px;
 }
+/*великі букви в параграфі*/
+h1 {
+  text-transform: uppercase;
+}
+/* параграф підкреслений*/
+h2 {
+  text-decoration: underline;
+}
+/* класс для стилізації, id для логики*/
+#t {
+  color: brown;
+  font-size: 25px;
+}
