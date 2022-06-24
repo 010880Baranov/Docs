@@ -34,10 +34,10 @@ h2 {
   font-size: 25px;
 }
 /*звернення до класу font та тега span*/
-section p.font {
-  text-decoration: dashed;
+div p.font {
+  color: rgb(240, 16, 45);
 }
 
-section p > span {
-  text-shadow: (1px 1px 10px chocolate);
+div p > span {
+  text-transform: capitalize;
 }
