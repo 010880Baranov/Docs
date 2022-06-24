@@ -48,8 +48,12 @@ h1 {
 }
 /* колір для парних та непарних елементів*/
 .list2 li:nth-child(2) {
-  color: darkblue;
+  color: rgb(238, 10, 21);
 }
 .list2 li:nth-child(3) {
-  color: crimson;
+  color: rgb(31, 235, 13);
+}
+/*додавання меж до кожного третього елемента починаючи з другого*/
+.list3 li:nth-child(3n + 2) {
+  border: 1px solid #000;
 }
