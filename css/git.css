@@ -19,14 +19,22 @@ h1 {
 section {
   padding: 20px 30px 20px;
 }
-/*великі букви в параграфі*/
+/*великі букви в заголовкі*/
 h1 {
   text-transform: uppercase;
 }
-/* параграф підкреслений*/
+
+/* заголовок підкреслений*/
 h2 {
   text-decoration: underline;
+  /*відступ між буквами*/
+  letter-spacing: 5px;
+  /*відступ між словами*/
+  word-spacing: 5px;
+  /*отступ від параграфів*/
+  line-height: 50px;
 }
+
 /* класс для стилізації, id для логики
 колір та шрифт текста*/
 #t {
@@ -42,10 +50,10 @@ div p > span {
   text-transform: capitalize;
   color: aqua;
 }
-/*псевдоелементи*/
+/*псевдоелементи
 p::first-letter {
   font-size: 30px;
-}
+}*/
 p::first-line {
   text-decoration: underline;
 }
@@ -82,4 +90,52 @@ div p {
 
 .block1 {
   border: 3px dashed blue;
+  padding: 30px;
+  margin: 10px;
+}
+
+div .perenos {
+  overflow: auto;
+}
+
+/*.perenos {
+  /* overflow: hidden;
+  white-space: break-space;
+}*/
+/* позіцюювання відносне*/
+.block2 {
+  background: darkorange;
+  color: aqua;
+  border: 3px solid #000;
+  font-size: 30px;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  /*відтолкнутися від ліва на 40 на від верха на 40px*/
+  position: relative;
+  left: 40px;
+  top: 40px;
+  /*блок поверх слоев*/
+  z-index: 1;
+  overflow: scroll;
+}
+
+/*абсолютне позиціювання*/
+.block3 {
+  background: darkorange;
+  color: aqua;
+  border: 3px solid #000;
+  font-size: 30px;
+  min-width: 100px;
+  max-width: 300px;
+  min-height: 100px;
+  margin: 10px;
+  position: absolute;
+  /*bottom: -3450px;
+  right: 50px;*/
+}
+
+/* позиціювання relative*/
+.perenos {
+  position: relative;
 }
